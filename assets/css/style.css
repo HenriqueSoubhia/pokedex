@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Kanit', Arial;
 }
 
 body{
@@ -18,7 +19,7 @@ main{
     width: 30%;
     min-width: 350px;
     position: relative;
-    height: 95%;
+    height:fit-content;
 }
 
 .pokedex{
@@ -27,8 +28,7 @@ main{
 
 .pokemon-info{
     position: absolute;
-    font-family: 'Kanit';
-    top: 52%;
+    top: 55%;
     right: 25%;
     font-size: clamp(8px,10vh,30px);
 }
@@ -43,12 +43,12 @@ main{
 .button-group{
     position: absolute;
     width: 100%;
-    top: 75%;
-    left: 10%;
+    top: 80%;
+    left: 25%;
 }
 
-.button-group input{
-    width: 30%;
+.button{
+    width: 50%;
     padding: 10px;
     margin: 10px;
     background-color: #2c2c2c;
@@ -56,9 +56,11 @@ main{
     box-shadow: -2px 3px 0 #222, -4px 6px #000;
     cursor: pointer;
     border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid black;
 }
 
-.button-group input:active{
+.button-group .button:active{
     box-shadow: inset -4px 4px 0 #222;
     
 }

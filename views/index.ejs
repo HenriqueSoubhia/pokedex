@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <main>
         <img src="images/buba.png" alt="pokemon" class="pokemon-img">
 
         <h1 class="pokemon-info">
-            <span>1</span>
+            <span><%=pokedexOrdem[0].number%></span>
             <span>-</span>
-            <span>bulbasaur</span>
+            <span><%=pokedexOrdem[0].name%></span>
         </h1>
 
         <div class="button-group">
-            <input type="button" value="Prev &lt">
-            <input type="button" value="Next &gt">
+            <a href="" class="button">Prev &lt</a>
+            <a href="" class="button">Next &gt</a>
         </div>
-            
-        <img src="images/pokedex.png" alt="pokedex" class="pokedex">
+
+        <img src="images/pokedex.png" draggable="false" alt="pokedex" class="pokedex">
     </main>
+
 </body>
+
 </html>
