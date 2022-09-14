@@ -5,7 +5,7 @@ const conexao = async () => {
 }
 
 const model = mongoose.Schema({
-    number:Number,
+    number:String,
     name:String,
     image:String
 })
